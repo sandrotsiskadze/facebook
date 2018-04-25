@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body{
+			background-color: #e9ebee;
+			margin: 0;
+		}
+		#header{
+    		height: 43px;
+    		background-color: #4267b2;
+		    border-bottom: 1px solid #29487d;
+		    color: #fff;
+		    display: flex;
+    		box-sizing: border-box;
+    		width: 100%;
+    		padding: 0 205px 0 0;
+		}
+		#header-menu{
+    		width: 1012px;
+    		display: flex;
+    		margin: auto;
+    		box-sizing: border-box;
+    		height: 42px;
+		}
+		#header-left{
+			flex: 1 1 auto;
+    		display: flex;
+		}
+		#header-right{
+			flex: 0 0 auto;
+		    display: flex;
+		}
+		#logo{
+			float: left;
+			position: relative;
+		    top: 9px;
+		    right: 6px;
+		    bottom: 9px;
+		    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+		    background-position: 0 -442px;
+		    height: 24px;
+		    width: 24px;
+		    cursor: pointer;
+		}
+		#search{
+			float: left;
+			width: 100%;
+			display: flex;
+		    background-color: #fff;
+		    border: 1px solid #3b5998;
+		    border-radius: 3px;
+		    box-sizing: border-box;
+		    height: 26px;
+		    max-width: 448px;
+		    padding: 0 0 0 7px;
+		    position: relative;
+		    top: 8px;
+		}
+		#search-bar{
+			float: left;
+		    height: 23px;
+		    border: 0;
+		    outline: 0;
+		    width: 393px;
+		    color: #333;
+		    cursor: text;
+		    height: 23px;
+		    font-size: 14px;
+		    font-family: Helvetica;
+    		box-sizing: border-box;
+		}
+		#search-button{
+			float: left;
+			width: 46px;
+			height: 24px;
+			background: #f6f7f9;
+		    border-radius: 0 2px 2px 0;
+		    cursor: pointer;
+		}
+		#button-icon{
+		    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+		    background-position: 0 -1258px;
+		    height: 14px;
+		    width: 14px;
+		    position: relative;
+		    top: 4px;
+		    left: 16px;
+		}
+		#header-right-left{
+			float: left;
+			display: inline-block;
+			width: 230.688px;
+			padding: 0 9px 0 0;
+		}
+		#header-right-middle{
+			float: flex;
+			display: inline-block;
+			width: 99px;
+			padding: 0 9px 0 9px;
+			border-right: 1px solid #29487d;
+			height: 18px;
+			position: relative;
+			top: 12px;
+		}
+		#header-right-right{
+			float: left;
+			display: inline-block;
+			width: 65px;
+		}
+		#profile{
+			float: left;
+			cursor: pointer;
+			border-right: 1px solid #29487d;
+			height: 18px;
+			position: relative;
+			top: 12px;
+			width: 82.34px;
+		}
+		#home{
+			float: left;
+			cursor: pointer;
+			border-right: 1px solid #29487d;
+			height: 18px;
+			position: relative;
+			top: 12px;
+			left: 10px;
+			width: 52.34px;
+		}
+		#find-friends{
+			float: left;
+			cursor: pointer;
+			height: 18px;
+			position: relative;
+			top: 12px;
+			left: 20px;
+			width: 91px;
+		}
+		#profile-img{
+			border-radius: 50%;
+			position: relative;
+			bottom: 3px;
+		}
+		#profile-text{
+		    font-size: 12px;
+		    font-weight: bold;
+		    position: relative;
+		    left: 3px;
+		    bottom: 11px;
+		    font-family: sans-serif;
+		}
+		#home-text{
+			font-size: 12px;
+		    font-weight: bold;
+		    position: relative;
+		    left: 3px;
+		    bottom: 1px;
+		    font-family: sans-serif;
+		}
+		#find-friends-text{
+			font-size: 12px;
+		    font-weight: bold;
+		    position: relative;
+		    left: 3px;
+		    bottom: 1px;
+		    font-family: sans-serif;
+		}
+		#friend-requests{
+			float: left;
+			cursor: pointer;
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+			background-position: 0 -467px;
+			height: 24px;
+			width: 24px;
+			position: relative;
+			top: -3px;
+			margin: 0 5px 0 4px;
+    		opacity: .6;
+		}
+		#messages{
+			float: left;
+			cursor: pointer;
+		    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+		    background-position: 0 -717px;
+		    height: 24px;
+		    width: 24px;
+		    position: relative;
+			top: -3px;
+			margin: 0 5px 0 4px;
+			opacity: .6;
+		}
+		#notifications{
+			float: left;
+			cursor: pointer;
+		    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+		    background-position: 0 -617px;
+		    height: 24px;
+		    width: 24px;
+		    position: relative;
+			top: -3px;
+			margin: 0 5px 0 4px;
+			opacity: .6;
+		}
+		#help{
+			float: left;
+			cursor: pointer;
+		    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+		    background-position: 0 -1063px;
+		    height: 20px;
+		    opacity: .6;
+		    width: 20px;
+		    position: relative;
+		    top: 11px;
+		    left: 13px;
+		}
+		#settings{
+			float: left;
+			cursor: pointer;
+    		background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+		    background-position: 0 -1021px;
+		    height: 20px;
+		    width: 20px;
+		    opacity: .6;
+		    position: relative;
+		    top: 11px;
+		    left: 26px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div id="header-menu">
+				<div id="header-left">
+					<a id="logo"></a>
+					<div id="search">
+						<input id="search-bar" placeholder="Search">
+						<div id="search-button">
+							<div id="button-icon"></div>
+						</div>
+					</div>
+				</div>
+				<div id="header-right">
+					<div id="header-right-left">
+						<a id="profile">
+							<img id="profile-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c7.0.24.24/p24x24/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=fa90275eb6eb3045c89edc68d305a458&oe=5B9A84DE">
+							<span id="profile-text">Sandro</span>
+						</a>
+						<a id="home">
+							<span id="home-text">Home</span>
+						</a>
+						<a id="find-friends">
+							<span id="find-friends-text">Find Friends</span>
+						</a>
+					</div>
+					<div id="header-right-middle">
+						<a id="friend-requests"></a>
+						<a id="messages"></a>
+						<a id="notifications"></a>
+					</div>
+					<div id="header-right-right">
+						<a id="help"></a>
+						<a id="settings"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+
+		</div>
+	</body>
+</html>
