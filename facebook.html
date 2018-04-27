@@ -26,17 +26,16 @@
 		#header-left{
 			flex: 1 1 auto;
     		display: flex;
+    		width: 581.31px;
 		}
 		#header-right{
 			flex: 0 0 auto;
 		    display: flex;
+		    width: 422.69px;
 		}
 		#logo{
 			float: left;
-			position: relative;
-		    top: 9px;
-		    right: 6px;
-		    bottom: 9px;
+		    margin: 9px 6px 9px 0;
 		    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
 		    background-position: 0 -442px;
 		    height: 24px;
@@ -54,8 +53,7 @@
 		    height: 26px;
 		    max-width: 448px;
 		    padding: 0 0 0 7px;
-		    position: relative;
-		    top: 8px;
+		    margin: 8px 0 0 0;
 		}
 		#search-bar{
 			float: left;
@@ -65,7 +63,6 @@
 		    width: 393px;
 		    color: #333;
 		    cursor: text;
-		    height: 23px;
 		    font-size: 14px;
 		    font-family: Helvetica;
     		box-sizing: border-box;
@@ -89,52 +86,44 @@
 		}
 		#header-right-left{
 			float: left;
-			display: inline-block;
 			width: 230.688px;
 			padding: 0 9px 0 0;
 		}
 		#header-right-middle{
 			float: flex;
-			display: inline-block;
 			width: 99px;
 			padding: 0 9px 0 9px;
 			border-right: 1px solid #29487d;
 			height: 18px;
-			position: relative;
-			top: 12px;
+			margin: 12px 0 0 0;
 		}
 		#header-right-right{
 			float: left;
-			display: inline-block;
-			width: 65px;
+			width: 56px;
+			padding: 0 0 0 9px;
 		}
 		#profile{
 			float: left;
 			cursor: pointer;
 			border-right: 1px solid #29487d;
 			height: 18px;
-			position: relative;
-			top: 12px;
-			width: 82.34px;
+			width: 82.344px;
+			margin: 12px 0 0 2px;
 		}
 		#home{
 			float: left;
 			cursor: pointer;
 			border-right: 1px solid #29487d;
 			height: 18px;
-			position: relative;
-			top: 12px;
-			left: 10px;
 			width: 52.34px;
+			margin: 12px 0 0 1px;
 		}
 		#find-friends{
 			float: left;
 			cursor: pointer;
 			height: 18px;
-			position: relative;
-			top: 12px;
-			left: 20px;
-			width: 91px;
+			width: 90px;
+			margin: 12px 0 0 1px;
 		}
 		#profile-img{
 			border-radius: 50%;
@@ -145,7 +134,7 @@
 		    font-size: 12px;
 		    font-weight: bold;
 		    position: relative;
-		    left: 3px;
+		    left: 2px;
 		    bottom: 11px;
 		    font-family: sans-serif;
 		}
@@ -153,7 +142,7 @@
 			font-size: 12px;
 		    font-weight: bold;
 		    position: relative;
-		    left: 3px;
+		    left: 8px;
 		    bottom: 1px;
 		    font-family: sans-serif;
 		}
@@ -161,7 +150,7 @@
 			font-size: 12px;
 		    font-weight: bold;
 		    position: relative;
-		    left: 3px;
+		    left: 8px;
 		    bottom: 1px;
 		    font-family: sans-serif;
 		}
@@ -173,8 +162,8 @@
 			height: 24px;
 			width: 24px;
 			position: relative;
-			top: -3px;
-			margin: 0 5px 0 4px;
+			bottom: 3px;
+			left: 3px;
     		opacity: .6;
 		}
 		#messages{
@@ -185,8 +174,8 @@
 		    height: 24px;
 		    width: 24px;
 		    position: relative;
-			top: -3px;
-			margin: 0 5px 0 4px;
+			bottom: 3px;
+			left: 12px;
 			opacity: .6;
 		}
 		#notifications{
@@ -197,8 +186,8 @@
 		    height: 24px;
 		    width: 24px;
 		    position: relative;
-			top: -3px;
-			margin: 0 5px 0 4px;
+			bottom: 3px;
+			left: 21px;
 			opacity: .6;
 		}
 		#help{
@@ -207,11 +196,11 @@
 		    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
 		    background-position: 0 -1063px;
 		    height: 20px;
-		    opacity: .6;
 		    width: 20px;
+		    opacity: .6;
 		    position: relative;
 		    top: 11px;
-		    left: 13px;
+		    left: 4px;
 		}
 		#settings{
 			float: left;
@@ -223,7 +212,163 @@
 		    opacity: .6;
 		    position: relative;
 		    top: 11px;
-		    left: 26px;
+		    left: 17px;
+		}
+
+		#main-menu{
+			width: 1012px;
+			padding: 12px 205px 0 0;
+			margin: auto;
+			min-height: 600px;
+			border-right: 0;
+		}
+		#sidebar{
+			float: left;
+			width: 180px;
+			min-height: 50px;
+			font-size: 13px;
+			font-family: sans-serif;
+			margin: -1px 0 0 0;
+		}
+		#section{
+			width: 180px;
+		}
+		#user-nav:hover{
+			background-color: #f6f7f9;
+		    border: 1px solid #dddfe2;
+		    border-radius: 2px;
+		    height: 26px;
+		    position: relative;
+		    bottom: -1px;
+		    left: -1px;
+		    right: -1px;
+		    top: -1px;
+		}
+		#user-nav{
+			display: flex;
+			height: 28px;
+			cursor: pointer;
+			margin: 1px 0 10px -4px;
+			width: 184px;
+		}
+		#section-menu{
+			width: 180px;
+			margin: 0 0 9px 0;
+		}
+		#shortcuts{
+			width: 180px;
+			margin: 0 0 5px 0;
+		}
+		#explore{
+			width: 180px;
+		}
+		#user-nav-img{
+			height: 20px;
+			width: 20px;
+			float: left;
+			border-radius: 50%;
+			margin: 4px 0 0 4px;
+		}
+		#user-nav-text{
+			margin: 0 0 0 6px;
+			max-width: 126px;
+			position: relative;
+			top: 6px;
+		}
+		#news-feed{
+			display: flex;
+			width: 184px;
+			height: 28px;
+			margin: 0 0 -1px -5px;
+			background-color: #f6f7f9;
+		    border: 1px solid #dddfe2;
+		    border-radius: 2px;
+		    cursor: pointer;
+		}
+		#news-feed-img{
+			float: left;
+			height: 20px;
+			width: 20px;
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);
+			background-position: 0 -1405px;
+			margin: 4px 0 0 4px;
+		}
+		#news-feed-text{
+			float: left;
+			font-weight: bold;
+			margin: 6px 0 0 6px;
+		}
+		#section-settings{
+			float: right;
+			height: 20px;
+    		width: 20px;
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);
+			background-position: 0 -397px;
+			position: relative;
+			top: 4px;
+		}
+		#messenger:hover{
+			background-color: #f6f7f9;
+		    border: 1px solid #dddfe2;
+		    border-radius: 2px;
+		    height: 27px;
+		    position: relative;
+		    bottom: -1px;
+		    left: -1px;
+		    right: -1px;
+		    top: -1px;
+		}
+		#messenger{
+			width: 184px;
+			height: 29px;
+			cursor: pointer;
+		    margin: 0 0 -2px -5px;
+		}
+		#messenger-img{
+			float: left;
+			height: 20px;
+			width: 20px;
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);
+			background-position: 0 -964px;
+			margin: 5px 0 0 5px;
+		}
+		#messenger-text{
+			float: left;
+			margin: 7px 0 0 6px;
+		}
+		#title{
+			color: #616770;
+			height: 17px;
+			margin: 0 0 -1px 0;
+			padding: 7px 0 4px 0;
+		}
+		.section-element:hover{
+			background-color: #f6f7f9;
+		    border: 1px solid #dddfe2;
+		    border-radius: 2px;
+		    height: 27px;
+		    position: relative;
+		    bottom: -1px;
+		    left: -1px;
+		    right: -1px;
+		    top: -1px;
+		}
+		.section-element{
+			display: flex;
+			width: 184px;
+			height: 29px;
+			cursor: pointer;
+		    margin: 0 0 0 -4px;
+		}
+		.section-img{
+			float: left;
+			height: 20px;
+			width: 20px;
+			margin: 3px 0 0 4px;
+		}
+		.section-text{
+			float: left;
+			margin: 5px 0 0 6px;
 		}
 		</style>
 	</head>
@@ -265,7 +410,83 @@
 			</div>
 		</div>
 		<div id="main">
-
+			<div id="main-menu">
+				<div id="sidebar">
+					<div id="user-nav">
+						<img id="user-nav-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c7.0.24.24/p24x24/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=fa90275eb6eb3045c89edc68d305a458&oe=5B9A84DE">
+						<span id="user-nav-text">Sandro Tsiskadze</span>
+						<div id="section-settings" style="left: 27px"></div>
+					</div>
+					<div id="section">
+						<div id="section-menu">
+							<div id="news-feed">
+								<div id="news-feed-img"></div>
+								<div id="news-feed-text">News Feed</div>
+								<div id="section-settings" style="left: 62px"></div>
+							</div>
+							<div id="messenger">
+								<div id="messenger-img"></div>
+								<div id="messenger-text">Messenger</div>
+							</div>
+						</div>
+						<div id="shortcuts">
+							<h4 id="title">Shortcuts</h4>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1846px;"></div>
+								<div class="section-text" style="margin: 4px 0 0 6px;">გაძლიერებული ა...</div>
+								<div id="section-settings" style="left: 14px"></div>
+							</div>
+						</div>
+						<div id="explore">
+							<h4 id="title">Explore</h4>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1531px;"></div>
+								<div class="section-text">Pages feed</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1489px;"></div>
+								<div class="section-text">On this day</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -52px;"></div>
+								<div class="section-text">Events</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1279px;"></div>
+								<div class="section-text">Groups</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1510px;"></div>
+								<div class="section-text">Pages</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1174px;"></div>
+								<div class="section-text">Games</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1426px;"></div>
+								<div class="section-text">Friend lists</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1426px;"></div>
+								<div class="section-text">Find Friends</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1636px;"></div>
+								<div class="section-text">Saved</div>
+							</div>
+							<div class="section-element">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -1594px;"></div>
+								<div class="section-text">Photos</div>
+							</div>
+							<div style="margin: 0 0 0 -5px">
+								<div class="section-img" style="background-image: url(https://www.facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png);background-position: 0 -52px;"></div>
+								<a class="section-text">See More...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
