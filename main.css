@@ -1,0 +1,26 @@
+body{
+	background-color: #e9ebee;
+	margin: 0;
+}
+#main-menu{
+	width: 1012px;
+	padding: 55px 205px 0 0;
+	margin: auto;
+	min-height: 600px;
+	border-right: 0;
+	display: flex;
+}
+#middle{
+	float: left;
+	color: #1d2129;
+	width: 820px;
+	min-height: 600px;
+	padding: 0;
+	margin: 0 0 0 12px;
+	border: 0;
+	display: flex;
+}
+#middle-left{
+	float: left;
+	width: 500px;
+}

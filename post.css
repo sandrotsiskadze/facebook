@@ -1,0 +1,94 @@
+.post{
+	background-color: #fff;
+	border: 1px solid #dddfe2;
+	border-radius: 3px;
+	margin: 0 0 10px 0;
+}
+.post-content{
+	padding: 12px 12px 0 0;
+}
+.post-img{
+	float: left;
+	margin: 0 8px 0 11px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.post-text{
+	float: left;
+}
+.post-author{
+	font-size: 14px;
+	font-weight: normal;
+	font-family: sans-serif;
+	color: #616770;
+	margin: 0 0 0 0;
+}
+.post-title{
+	margin: 45px 0 0 11px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+.post-photo{
+	border: 1px solid #e5e5e5;
+	padding-bottom: 12px;
+	margin: 5px 0 0 11px;
+	width: 476px;
+	height: 556px;
+}
+.post-menu{
+	font-size: 13px;
+	color: #90949c;
+}
+.likes{
+	margin: 10px 0 0 0;
+	padding: 0 0 6px 0;
+	border-bottom: 1px solid #e5e5e5;
+	height: 27px;
+}
+.comments-count{
+	float: right;
+	font-family: sans-serif;
+	margin: 0 9px 0 0;
+}
+.buttons{
+	border: none;
+	display: flex;
+	padding: 4px 0 4px 0;
+	color: #616770;
+	font-size: 13px;
+	font-weight: 600;
+}
+.like-button{
+	float: left;
+	height: 32px;
+	outline: none;
+	cursor: pointer;
+}
+.comment-button{
+	float: left;
+	height: 32px;
+	outline: none;
+	cursor: pointer;
+}
+.share-button{
+	float: left;
+	height: 32px;
+	outline: none;
+	cursor: pointer;
+}
+.button-img{
+	float: left;
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yj/r/E6ILKRlsxpN.png);
+	height: 18px;
+	width: 18px;
+	margin: 6px 0 0 80px;
+}
+.button-text{
+	font-size: 13px;
+	font-family: sans-serif;
+	margin: 0 0 0 8px;
+	position: relative;
+	top: 8px;
+}

@@ -1,0 +1,109 @@
+#right{
+	float: right;
+	border-left-color: #ccc;
+	background-color: #e9ebee;
+	border-left: 1px solid rgba(0, 0, 0, .4);
+	font-size: 12px;
+	height: 100%;
+	width: 204px;
+	font-family: sans-serif;
+	position: fixed;
+	top: 43px;
+	right: 0;
+	overflow: hidden;
+}
+#contacts-title{
+	padding: 15px 0 8px 8px;
+	font-family: Helvetica;
+	color: #4c4c4c;
+    font-size: 11px;
+    font-weight: bold;
+}
+.contact{
+	color: #333;
+	height: 32px;
+	padding: 4px 0 0 8px;
+	cursor: pointer;
+	display: flex;
+	width: 100%;
+	margin: 0 0 5px 0;
+}
+.contact-img{
+	border-radius: 50%;
+	height: 34px;
+	width: 34px;
+	float: left;
+}
+.contact-text{
+	float: left;
+	margin: 10px 0 0 10px;
+	width: 100%;
+}
+.contact-light{
+	float: right;
+	background: rgb(66, 183, 42);
+	border-radius: 50%;
+	height: 6px;
+	width: 6px;
+	position: relative;
+	top: 15px;
+	right: 20px;
+}
+#contact-search{
+	background-color: #f6f7f9;
+	border: none;
+	padding: 0 0 1px 0;
+	height: 31px;
+	box-sizing: border-box;
+	font-weight: normal;
+}
+#contact-search-img{
+	float: left;
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+	background-position: -34px -482px;
+	height: 12px;
+	width: 12px;
+	margin: 10px 0 0 8px;
+}
+#contact-search-input{
+	float: left;
+	position: relative;
+	background-color: #f6f7f9;
+    border-radius: 5px;
+    border-style: none;
+    box-sizing: border-box;
+    font-size: 14px;
+	height: 30px;
+	width: 78px;
+	padding: 0 0 0 8px;
+}
+#contact-search-menu{
+	float: right;
+	padding: 0 0 3px 0;
+	display: flex;
+	margin: 7px 0 0 0;
+}
+#contact-search-settings{
+	float: left;
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+	background-position: 0 -487px;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+#contact-search-new{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+	background-position: 0 -419px;
+	height: 16px;
+	width: 16px;
+	margin: 0 8px 0 8px;
+	cursor: pointer;
+}
+#contact-search-group{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+	background-position: 0 -453px;
+	height: 16px;
+	width: 16px;
+	margin: 0 5px 0 0;
+	cursor: pointer;
+}

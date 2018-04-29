@@ -1,0 +1,210 @@
+#header{
+	position: fixed;
+	z-index: 100;
+	height: 43px;
+	background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 205px 0 0;
+}
+#header-menu{
+	width: 1012px;
+	display: flex;
+	margin: auto;
+	box-sizing: border-box;
+	height: 42px;
+}
+#header-left{
+	flex: 1 1 auto;
+	display: flex;
+	width: 581.31px;
+}
+#header-right{
+	flex: 0 0 auto;
+    display: flex;
+    width: 422.69px;
+}
+#logo{
+	float: left;
+    margin: 9px 6px 9px 0;
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -442px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;		    
+}
+#search{
+	float: left;
+	width: 100%;
+	display: flex;
+    background-color: #fff;
+    border: 1px solid #3b5998;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 26px;
+    max-width: 448px;
+    padding: 0 0 0 7px;
+    margin: 8px 0 0 0;
+}
+#search-bar{
+	float: left;
+    height: 23px;
+    border: 0;
+    outline: 0;
+    width: 393px;
+    color: #333;
+    cursor: text;
+    font-size: 14px;
+    font-family: Helvetica;
+	box-sizing: border-box;
+}
+#search-button{
+	float: left;
+	width: 46px;
+	height: 24px;
+	background: #f6f7f9;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+#button-icon{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1258px;
+    height: 14px;
+    width: 14px;
+    position: relative;
+    top: 4px;
+    left: 16px;
+}
+#header-right-left{
+	float: left;
+	width: 230.688px;
+	padding: 0 9px 0 0;
+}
+#header-right-middle{
+	float: flex;
+	width: 99px;
+	padding: 0 9px 0 9px;
+	border-right: 1px solid #29487d;
+	height: 18px;
+	margin: 12px 0 0 0;
+}
+#header-right-right{
+	float: left;
+	width: 56px;
+	padding: 0 0 0 9px;
+}
+#profile{
+	float: left;
+	cursor: pointer;
+	border-right: 1px solid #29487d;
+	height: 18px;
+	width: 82.344px;
+	margin: 12px 0 0 2px;
+}
+#home{
+	float: left;
+	cursor: pointer;
+	border-right: 1px solid #29487d;
+	height: 18px;
+	width: 52.34px;
+	margin: 12px 0 0 1px;
+}
+#find-friends{
+	float: left;
+	cursor: pointer;
+	height: 18px;
+	width: 90px;
+	margin: 12px 0 0 1px;
+}
+#profile-img{
+	border-radius: 50%;
+	position: relative;
+	bottom: 3px;
+}
+#profile-text{
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 2px;
+    bottom: 11px;
+    font-family: sans-serif;
+}
+#home-text{
+	font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 8px;
+    bottom: 1px;
+    font-family: sans-serif;
+}
+#find-friends-text{
+	font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 8px;
+    bottom: 1px;
+    font-family: sans-serif;
+}
+#friend-requests{
+	float: left;
+	cursor: pointer;
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+	background-position: 0 -467px;
+	height: 24px;
+	width: 24px;
+	position: relative;
+	bottom: 3px;
+	left: 3px;
+	opacity: .6;
+}
+#messages{
+	float: left;
+	cursor: pointer;
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -717px;
+    height: 24px;
+    width: 24px;
+    position: relative;
+	bottom: 3px;
+	left: 12px;
+	opacity: .6;
+}
+#notifications{
+	float: left;
+	cursor: pointer;
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -617px;
+    height: 24px;
+    width: 24px;
+    position: relative;
+	bottom: 3px;
+	left: 21px;
+	opacity: .6;
+}
+#help{
+	float: left;
+	cursor: pointer;
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1063px;
+    height: 20px;
+    width: 20px;
+    opacity: .6;
+    position: relative;
+    top: 11px;
+    left: 4px;
+}
+#settings{
+	float: left;
+	cursor: pointer;
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1021px;
+    height: 20px;
+    width: 20px;
+    opacity: .6;
+    position: relative;
+    top: 11px;
+    left: 17px;
+}
