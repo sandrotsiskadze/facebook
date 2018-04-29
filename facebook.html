@@ -7,6 +7,8 @@
 			margin: 0;
 		}
 		#header{
+			position: fixed;
+			z-index: 100;
     		height: 43px;
     		background-color: #4267b2;
 		    border-bottom: 1px solid #29487d;
@@ -40,7 +42,7 @@
 		    background-position: 0 -442px;
 		    height: 24px;
 		    width: 24px;
-		    cursor: pointer;
+		    cursor: pointer;		    
 		}
 		#search{
 			float: left;
@@ -217,10 +219,11 @@
 
 		#main-menu{
 			width: 1012px;
-			padding: 12px 205px 0 0;
+			padding: 55px 205px 0 0;
 			margin: auto;
 			min-height: 600px;
 			border-right: 0;
+			display: flex;
 		}
 		#sidebar{
 			float: left;
@@ -378,6 +381,7 @@
 			padding: 0;
 			margin: 0 0 0 12px;
 			border: 0;
+			display: flex;
 		}
 		#middle-left{
 			float: left;
@@ -686,6 +690,163 @@
 			position: relative;
 			top: 8px;
 		}
+		#middle-right{
+			float: left;
+			width: 308px;
+			font-size: 13px;
+			margin: 0 0 0 11px;
+		}
+		#stories{
+			padding: 12px;
+			background-color: #fff;
+			border: 1px solid #dddfe2;
+    		border-radius: 3px;
+    		height: 80px;
+		}
+		#stories-title{
+			height: 16px;
+			color: #616770;
+		    font-size: 13px;
+		    font-family: sans-serif;
+		    font-weight: 600;
+    		cursor: pointer;
+		}
+		.story{
+			margin: 10px 0 0 0;
+		}
+		.story-img{
+			float: left;
+			height: 56px;
+			width: 56px;
+			border-color: #4080ff;
+			border: 2px solid #bec2c9;
+		    border-radius: 50%;
+		    box-sizing: border-box;
+		}
+		.story-text{
+			float: left;
+			margin: 10px 0 0 8px;
+			color: #365899;
+			font-weight: 600;
+			text-align: left;
+			font-size: 13px;
+			font-family: sans-serif;
+		}
+		#right{
+			float: right;
+			border-left-color: #ccc;
+			background-color: #e9ebee;
+			border-left: 1px solid rgba(0, 0, 0, .4);
+			font-size: 12px;
+    		height: 100%;
+    		width: 204px;
+    		font-family: sans-serif;
+    		position: fixed;
+    		top: 43px;
+    		right: 0;
+    		overflow: hidden;
+		}
+		#contacts{
+
+		}
+		#contacts-title{
+			padding: 15px 0 8px 8px;
+			font-family: Helvetica;
+			color: #4c4c4c;
+		    font-size: 11px;
+		    font-weight: bold;
+		}
+		#contacts-list{
+
+		}
+		.contact{
+			color: #333;
+			height: 32px;
+			padding: 4px 0 0 8px;
+			cursor: pointer;
+			display: flex;
+			width: 100%;
+			margin: 0 0 5px 0;
+		}
+		.contact-img{
+			border-radius: 50%;
+    		height: 34px;
+    		width: 34px;
+    		float: left;
+		}
+		.contact-text{
+			float: left;
+			margin: 10px 0 0 10px;
+			width: 100%;
+		}
+		.contact-light{
+			float: right;
+			background: rgb(66, 183, 42);
+    		border-radius: 50%;
+    		height: 6px;
+    		width: 6px;
+    		position: relative;
+    		top: 15px;
+    		right: 20px;
+		}
+		#contact-search{
+			background-color: #f6f7f9;
+			border: none;
+			padding: 0 0 1px 0;
+			height: 31px;
+			box-sizing: border-box;
+			font-weight: normal;
+		}
+		#contact-search-img{
+			float: left;
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+			background-position: -34px -482px;
+			height: 12px;
+			width: 12px;
+			margin: 10px 0 0 8px;
+		}
+		#contact-search-input{
+			float: left;
+			position: relative;
+			background-color: #f6f7f9;
+		    border-radius: 5px;
+		    border-style: none;
+		    box-sizing: border-box;
+		    font-size: 14px;
+    		height: 30px;
+    		width: 78px;
+    		padding: 0 0 0 8px;
+		}
+		#contact-search-menu{
+			float: right;
+			padding: 0 0 3px 0;
+			display: flex;
+			margin: 7px 0 0 0;
+		}
+		#contact-search-settings{
+			float: left;
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+			background-position: 0 -487px;
+			height: 16px;
+			width: 16px;
+			cursor: pointer;
+		}
+		#contact-search-new{
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+			background-position: 0 -419px;
+			height: 16px;
+			width: 16px;
+			margin: 0 8px 0 8px;
+			cursor: pointer;
+		}
+		#contact-search-group{
+			background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/-dQDYg2XsdY.png);
+			background-position: 0 -453px;
+			height: 16px;
+			width: 16px;
+			margin: 0 5px 0 0;
+			cursor: pointer;
+		}
 		</style>
 	</head>
 	<body>
@@ -700,6 +861,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div id="header-right">
 					<div id="header-right-left">
 						<a id="profile">
@@ -713,11 +875,13 @@
 							<span id="find-friends-text">Find Friends</span>
 						</a>
 					</div>
+
 					<div id="header-right-middle">
 						<a id="friend-requests"></a>
 						<a id="messages"></a>
 						<a id="notifications"></a>
 					</div>
+
 					<div id="header-right-right">
 						<a id="help"></a>
 						<a id="settings"></a>
@@ -725,6 +889,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div id="main">
 			<div id="main-menu">
 				<div id="sidebar">
@@ -802,6 +967,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div id="middle">
 					<div id="middle-left">
 						<div id="new-post">
@@ -850,6 +1016,7 @@
 												<span style="color: #616770;font-size: 12px;font-family: sans-serif;">44 mins</span>
 											</div>
 										</div>
+
 									</div>
 									<div class="post-title">Follow our own - Sadcasm 👍 For More 😌</div>
 									<img class="post-photo" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-0/p480x480/31395956_1036326993425875_6811302348833423360_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeH-EgIVEanIG7zIn_pr702300nFMvoaqRVazMyQztoY48PTCKBMg4YvpKn1mMrPO_sUdNumTrMaqt5QnpvnD_8e16n_tkb2AGNA5zA4jDsL7Q&oh=c3eae1067cc2fe9eac6c8608f8673943&oe=5B518013">
@@ -883,7 +1050,136 @@
 						</div>
 					</div>
 					<div id="middle-right">
-
+						<div id="stories">
+							<span id="stories-title">Stories</span>
+							<div id="stories-content">
+								<div class="story">
+									<img class="story-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/p48x48/24993386_379877782463317_5924350292709745531_n.jpg?_nc_cat=0&oh=e0551c96dbf23d1e66f9b3b3a972715b&oe=5B90830D">
+									<div class="story-text">People From Georgia</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="contacts">
+					<div id="contacts-title">CONTACTS</div>
+					<div id="contacts-list">
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+						<div class="contact">
+							<img class="contact-img" src="https://scontent.fgyd4-1.fna.fbcdn.net/v/t1.0-1/c9.0.32.32/p32x32/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&oh=d24cfbe781e2a9c5ede250bc9b1bca11&oe=5B62CFE4">
+							<span class="contact-text">Name Surname</span>
+							<div class="contact-light"></div>
+						</div>
+					</div>
+					<div id="contact-search">
+						<div id="contact-search-img"></div>
+						<input id="contact-search-input" placeholder="Search">
+						<div id="contact-search-menu">
+							<div id="contact-search-settings"></div>
+							<div id="contact-search-new"></div>
+							<div id="contact-search-group"></div>
+						</div>
 					</div>
 				</div>
 			</div>
